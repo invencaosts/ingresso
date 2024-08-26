@@ -7,6 +7,50 @@
 
     <script defer src="./assets/js/bundle.js"></script>
     <link rel="stylesheet" href="assets/css/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div id="body">
+      <div id="titulo">
+        <h2>Gerador de QRCode</h2>
+        <p>Insira seus dados para concluir o processo.</p>
+      </div>
+
+      <div id="dados">
+        <div id="centro-ne">
+          <div id="nome">
+            <p>Nome</p>
+            <input type="text" />
+          </div>
+
+          <div id="email">
+            <p>Email</p>
+            <input type="text" />
+          </div>
+        </div>
+
+        <div id="cpf">
+          <p>CPF</p>
+          <input type="text" />
+        </div>
+
+        <div id="mp">
+          <p>Método de Pagamento</p>
+          <select name="" id="select">
+            <option value="">PIX</option>
+            <option value="">Débito</option>
+            <option value="">Crédito</option>
+          </select>
+        </div>
+
+        <button>Concluir processo</button>
+      </div>
+    </div>
+  </body>
 </html>
