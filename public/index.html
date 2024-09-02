@@ -30,13 +30,18 @@
 
         <div id="evento" class="input-grande">
           <p>Evento escolhido</p>
-          <input type="text" value="Evento Geek 2024 - Aracaju .." readonly />
+          <input
+            class="input"
+            type="text"
+            value="Evento Geek 2024 - Aracaju .."
+            readonly
+          />
         </div>
 
         <div id="centro-ig" class="inputs-centro">
           <div id="ingresso" class="input-pequeno">
             <p>Ingresso</p>
-            <select name="" id="">
+            <select name="" id="" class="input">
               <option value="">Inteira - R$120</option>
               <option value="">Meia - R$60</option>
             </select>
@@ -44,7 +49,7 @@
 
           <div id="quantidade" class="input-pequeno">
             <p>Quantidade</p>
-            <input type="number" />
+            <input type="number" class="input" />
           </div>
         </div>
 
@@ -55,32 +60,46 @@
 
         <div id="nome" class="input-grande">
           <p>Nome</p>
-          <input type="text" />
+          <input type="text" class="input" />
         </div>
 
         <div id="centro-ne" class="inputs-centro">
           <div id="cpf" class="input-pequeno">
             <p>CPF</p>
-            <input type="text" />
+            <input type="text" class="input" />
           </div>
 
           <div id="email" class="input-pequeno">
             <p>Email</p>
-            <input type="text" />
+            <input type="text" class="input" />
           </div>
         </div>
 
-        <div id="me-pagamento" class="input-grande">
+        <div id="me-pagamento">
           <p>Método de Pagamento</p>
-          <select name="" id="">
-            <option value="">PIX</option>
-            <option value="">Boleto</option>
-            <option value="">Débito</option>
-            <option value="">Crédito</option>
-          </select>
+          <div class="radios">
+            <div id="radio-one">
+              <input type="radio" name="mp" />
+              <label for="">PIX</label>
+            </div>
+            <div id="radio-two">
+              <input type="radio" name="mp" />
+              <label for="">Boleto</label>
+            </div>
+            <div id="radio-three">
+              <input type="radio" name="mp" />
+              <label for="">Débito</label>
+            </div>
+            <div id="radio-four">
+              <input type="radio" name="mp" />
+              <label for="">Crédito</label>
+            </div>
+          </div>
         </div>
 
-        <button>COMPRAR</button>
+        <div id="button">
+          <button>GERAR INGRESSO</button>
+        </div>
       </div>
     </div>
   </body>
