@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Seller</title>
+
+    <!-- Script BundleJs -->
+    <script defer src="../js/bundle.js"></script>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/checkout.css" />
+
+    <!-- Link Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="header-titulo"><h1>Ticket Seller</h1></div>
+    </header>
+    <div id="body">
+      <div id="body-titulo">
+        <h2>Checkout</h2>
+        <p>Insira seus dados para concluir o processo.</p>
+      </div>
+
+      <div id="dados">
+        <div id="separador-ingressos" class="separador">
+          <p>Informações do Ingresso</p>
+          <div></div>
+        </div>
+
+        <div id="evento" class="input-grande">
+          <p>Evento escolhido</p>
+          <input
+            name="evento-escolhido"
+            class="input"
+            type="text"
+            value="Evento Geek 2024 - Aracaju .."
+            readonly
+          />
+        </div>
+
+        <div id="centro-iq" class="inputs-centro">
+          <div id="ingresso" class="input-pequeno">
+            <p>Ingresso</p>
+            <select name="ingresso" class="input">
+              <option selected value="">Inteira - R$120</option>
+              <option value="">Meia - R$60</option>
+            </select>
+          </div>
+
+          <div id="quantidade" class="input-pequeno">
+            <p>Quantidade</p>
+            <input
+              name="quantidade"
+              type="number"
+              class="input"
+              min="1"
+              max="5"
+              value="1"
+            />
+          </div>
+        </div>
+
+        <div id="separador-pessoais" class="separador">
+          <p>Informações do dados pessoais</p>
+          <div></div>
+        </div>
+
+        <div id="nome" class="input-grande">
+          <p>Nome</p>
+          <input
+            placeholder="Vera Lúcia"
+            name="nome"
+            type="text"
+            class="input"
+          />
+        </div>
+
+        <div id="centro-ce" class="inputs-centro">
+          <div id="cpf" class="input-pequeno">
+            <p>CPF</p>
+            <input
+              placeholder="000.000.000-00"
+              name="cpf"
+              type="text"
+              class="input"
+            />
+          </div>
+
+          <div id="email" class="input-pequeno">
+            <p>Email</p>
+            <input
+              placeholder="email@email.com"
+              name="email"
+              type="text"
+              class="input"
+            />
+          </div>
+        </div>
+
+        <div id="me-pagamento">
+          <p>Método de Pagamento</p>
+          <div class="radios">
+            <div id="radio-one">
+              <input checked type="radio" name="mp" id="pix-input" />
+              <label for="pix-input">PIX</label>
+            </div>
+            <div id="radio-two">
+              <input type="radio" name="mp" id="boleto-input" />
+              <label for="boleto-input">Boleto</label>
+            </div>
+            <div id="radio-three">
+              <input type="radio" name="mp" id="debito-input" />
+              <label for="debito-input">Débito</label>
+            </div>
+            <div id="radio-four">
+              <input type="radio" name="mp" id="credito-input" />
+              <label for="credito-input">Crédito</label>
+            </div>
+          </div>
+        </div>
+
+        <div id="button">
+          <button>GERAR INGRESSO</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
