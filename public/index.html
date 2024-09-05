@@ -57,7 +57,14 @@
 
           <div id="quantidade" class="input-pequeno">
             <p>Quantidade</p>
-            <input name="quantidade" type="number" class="input" />
+            <input
+              name="quantidade"
+              type="number"
+              class="input"
+              min="1"
+              max="5"
+              value="1"
+            />
           </div>
         </div>
 
@@ -68,18 +75,33 @@
 
         <div id="nome" class="input-grande">
           <p>Nome</p>
-          <input name="nome" type="text" class="input" />
+          <input
+            placeholder="Vera Lúcia"
+            name="nome"
+            type="text"
+            class="input"
+          />
         </div>
 
         <div id="centro-ce" class="inputs-centro">
           <div id="cpf" class="input-pequeno">
             <p>CPF</p>
-            <input name="cpf" type="text" class="input" />
+            <input
+              placeholder="000.000.000-00"
+              name="cpf"
+              type="text"
+              class="input"
+            />
           </div>
 
           <div id="email" class="input-pequeno">
             <p>Email</p>
-            <input name="email" type="text" class="input" />
+            <input
+              placeholder="email@email.com"
+              name="email"
+              type="text"
+              class="input"
+            />
           </div>
         </div>
 
@@ -87,7 +109,7 @@
           <p>Método de Pagamento</p>
           <div class="radios">
             <div id="radio-one">
-              <input type="radio" name="mp" id="pix-input" />
+              <input checked type="radio" name="mp" id="pix-input" />
               <label for="pix-input">PIX</label>
             </div>
             <div id="radio-two">
