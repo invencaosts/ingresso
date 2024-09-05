@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --color-black: black;
+  --color-white: white;
+  --color-gray: #a6a6a6;
+  --color-green: #0bd90b;
+  --color-dark-green: green;
+  --color-blue: blue;
+  --color-red: red;
+}
+
+#header-titulo {
+  margin: 0.8rem 0 0.8rem 0.8rem;
+}
+
+#body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+#body-titulo {
+  text-align: center;
+
+  margin: 1.2rem 0 1.2rem 0;
+}
+
+#body-titulo p {
+  color: var(--color-gray);
+}
+
+#dados {
+  max-width: 20rem;
+  padding: 1.8rem 1.5rem 1.8rem 1.5rem;
+
+  border: 2px solid var(--color-black);
+  border-radius: 6px;
+}
+
+.separador {
+  text-align: center;
+
+  color: var(--color-gray);
+}
+
+.separador div {
+  height: 1px;
+  margin: 0.5rem 0 1.2rem 0;
+
+  background-color: var(--color-gray);
+}
+
+.input-values {
+  margin-top: 0.6rem;
+
+  color: var(--color-gray);
+}
+
+.values-centro {
+  display: flex;
+  justify-content: space-between;
+}
+
+#ingresso,
+#quantidade {
+  margin-top: 1rem;
+}
+
+#separador-pessoais {
+  margin-top: 1.8rem;
+}
+
+#sp {
+  display: flex;
+  gap: 0.5rem;
+
+  margin-top: 0.6rem;
+}
+
+#values-sp {
+  font-weight: bold;
+  color: var(--color-green);
+}
+
+#area-qrcode {
+  margin: 0.6rem 0 0.6rem 0;
+
+  text-align: center;
+}
+
+#text-qrcode {
+  margin-bottom: 0.6rem;
+
+  font-weight: bold;
+  color: var(--color-dark-green);
+}
+
+#area-separador-qrcode {
+  margin-top: 0.6rem;
+}
+
+#separador-qrcode {
+  margin: 0;
+
+  width: 12rem;
+
+  position: relative;
+  left: 14.5%;
+}
+
+#area-separador-qrcode p {
+  font-size: 0.8rem;
+}
+
+#button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+#button button {
+  text-align: center;
+
+  cursor: pointer;
+
+  width: 10rem;
+  height: 1.8rem;
+
+  border-radius: 4px;
+  border: none;
+
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+#btn-baixar-ingresso {
+  margin-top: 1rem;
+
+  background-color: var(--color-black);
+}
+
+#btn-compartilhar {
+  background-color: var(--color-blue);
+}
+
+#btn-reembolso {
+  background-color: var(--color-red);
+}

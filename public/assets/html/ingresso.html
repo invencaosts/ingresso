@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Seller</title>
+
+    <!-- Script BundleJs -->
+    <script defer src="../js/bundle.js"></script>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/ingresso.css" />
+
+    <!-- Link Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="header-titulo"><h1>Ticket Seller</h1></div>
+    </header>
+
+    <div id="body">
+      <div id="body-titulo">
+        <h2>Ingresso</h2>
+        <p>Todas as informações do seu ingresso estão aqui.</p>
+      </div>
+
+      <div id="dados">
+        <div id="separador-ingressos" class="separador">
+          <p>Informações do Ingresso</p>
+          <div></div>
+        </div>
+
+        <div id="evento" class="values-grande">
+          <p>Evento escolhido</p>
+          <p class="input-values">Evento Geek 2024 - Aracaju ...</p>
+        </div>
+
+        <div id="centro-iq" class="values-centro">
+          <div id="ingresso" class="values-pequeno">
+            <p>Ingresso</p>
+            <p class="input-values">Inteira - R$120</p>
+          </div>
+
+          <div id="quantidade" class="values-pequeno">
+            <p>Quantidade</p>
+            <p class="input-values">1 Ingresso</p>
+          </div>
+        </div>
+
+        <div id="separador-pessoais" class="separador">
+          <p>Informações do dados pessoais</p>
+          <div></div>
+        </div>
+
+        <div id="nome" class="values-grande">
+          <p>Nome</p>
+          <p class="input-values">Vera Lúcia</p>
+        </div>
+
+        <div id="centro-ce" class="values-centro">
+          <div id="cpf" class="values-pequeno">
+            <p>CPF</p>
+            <p class="input-values">000.000.000-00</p>
+          </div>
+
+          <div id="email" class="values-pequeno">
+            <p>Email</p>
+            <p class="input-values">email@email.com</p>
+          </div>
+        </div>
+
+        <div id="sp" class="values-grande">
+          <p>Situação do pagamento:</p>
+          <p id="values-sp">Aprovado</p>
+        </div>
+
+        <div id="area-qrcode">
+          <p id="text-qrcode">Apresente esse QRCode na entrada do evento</p>
+          <div>
+            <img src="../../imgs/qrcode.png" alt="qrcode" />
+          </div>
+          <div id="area-separador-qrcode" class="separador">
+            <div id="separador-qrcode"></div>
+            <p>Código de segurança</p>
+            <p>HAHAHDHAHAHDHSADADHADAHD</p>
+          </div>
+        </div>
+
+        <div id="button">
+          <button id="btn-baixar-ingresso">BAIXAR INGRESSO</button>
+          <button id="btn-compartilhar">COMPARTILHAR</button>
+          <button id="btn-reembolso">REEMBOLSO</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
