@@ -6,6 +6,15 @@
   font-family: "Inter", sans-serif;
 }
 
+:root {
+  --color-gray: #a6a6a6;
+  --color-black: black;
+}
+
+#header-titulo {
+  margin: 15px 0 15px 15px;
+}
+
 #body {
   display: flex;
   flex-direction: column;
@@ -13,31 +22,39 @@
   align-items: center;
 }
 
-#titulo {
+#body-titulo {
   text-align: center;
 
   margin: 20px 0 20px 0;
 }
 
-#titulo p {
-  color: #a6a6a6;
+#body-titulo p {
+  color: var(--color-gray);
+}
+
+#dados {
+  max-width: 350px;
+  padding: 30px 25px 30px 25px;
+
+  border: 2px solid var(--color-black);
+  border-radius: 6px;
 }
 
 .separador {
   text-align: center;
 
-  color: #a6a6a6;
+  color: var(--color-gray);
 }
 
 .separador div {
   height: 1px;
   margin: 8px 0 20px 0;
 
-  background-color: #a6a6a6;
+  background-color: var(--color-gray);
 }
 
 .input {
-  border: 1px solid #a6a6a6;
+  border: 1px solid var(--color-gray);
   border-radius: 4px;
 
   outline: none;
@@ -45,7 +62,7 @@
 
   margin-top: 6px;
 
-  color: #a6a6a6;
+  color: var(--color-gray);
 }
 
 .inputs-centro {
@@ -60,15 +77,7 @@
 
 .input-grande input,
 .input-grande select {
-  width: 270px;
-}
-
-#dados {
-  width: 400px;
-  padding: 30px 25px 30px 25px;
-
-  border: 2px solid black;
-  border-radius: 6px;
+  width: 300px;
 }
 
 #ingresso,
@@ -112,7 +121,7 @@
 
   border-radius: 4px;
   border: none;
-  background-color: black;
+  background-color: var(--color-black);
 
   font-weight: bold;
   color: white;
@@ -120,7 +129,7 @@
 
 @media (min-width: 760px) {
   #dados {
-    width: 540px;
+    max-width: 540px;
   }
 
   .input-pequeno input,
