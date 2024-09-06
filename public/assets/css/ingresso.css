@@ -1,24 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  font-family: "Inter", sans-serif;
-}
-
-:root {
-  --color-black: black;
-  --color-white: white;
-  --color-gray: #a6a6a6;
-  --color-green: #0bd90b;
-  --color-dark-green: green;
-  --color-blue: blue;
-  --color-red: red;
-}
-
-#header-titulo {
-  margin: 0.8rem 0 0.8rem 0.8rem;
-}
+@import url(./root.css);
 
 #body {
   display: flex;

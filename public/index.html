@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticket Seller</title>
+
+    <!-- Script BundleJs -->
+    <script defer src="../js/bundle.js"></script>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <!-- Link Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <style>
+    <!-- <style>
       * {
         margin: 0;
         padding: 0;
@@ -18,6 +32,76 @@
       }
     </style>
     <a href="./assets/html/checkout.html">checkout</a>
-    <a href="./assets/html/ingresso.html">ingresso</a>
+    <a href="./assets/html/ingresso.html">ingresso</a> -->
+
+    <header>
+      <div id="header-titulo"><p>Ticket Seller</p></div>
+      <div id="barra-pesquisa">
+        <img src="imgs/icons/icon-search.svg" alt="icone de lupa" />
+        <input type="text" placeholder="Pesquisar eventos..." />
+      </div>
+      <div id="localizacao">
+        <img
+          id="icon-location-on"
+          src="imgs/icons/location-on.svg"
+          alt="pin of location"
+        />
+        <select name="local" id="local">
+          <option value="aracaju">Aracaju</option>
+          <option value="sao-paulo">São Paulo</option>
+        </select>
+      </div>
+    </header>
+    <section id="eventos">
+      <p>Eventos do fim de semana</p>
+      <div id="eventos-fds">
+        <div class="info-eventos">
+          <img
+            class="img-evento"
+            src="imgs/img-evento.png"
+            alt="Imagem do evento"
+          />
+          <div class="texto-evento">
+            <p class="nome-evento">Evento Geek 2024 - Aracaju</p>
+            <div class="data-hora">
+              <div class="data">
+                <img src="imgs/icons/icon-calendar.svg" alt="Icone de data" />
+                <p>12/06/2024</p>
+              </div>
+              <div class="hora">
+                <img src="imgs/icons/icon-clock.svg" alt="Icone de relógio" />
+                <p>20:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="botao-evento">
+            <button>COMPRAR</button>
+          </div>
+        </div>
+        <!-- <div class="info-eventos">
+          <img
+            class="img-evento"
+            src="imgs/img-evento.png"
+            alt="Imagem do evento"
+          />
+          <div class="texto-evento">
+            <p class="nome-evento">Evento Geek 2024 - Aracaju</p>
+            <div class="data-hora">
+              <div class="data">
+                <img src="imgs/icons/icon-calendar.svg" alt="Icone de data" />
+                <p>12/06/2024</p>
+              </div>
+              <div class="hora">
+                <img src="imgs/icons/icon-clock.svg" alt="Icone de relógio" />
+                <p>20:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="botao-evento">
+            <button>COMPRAR</button>
+          </div>
+        </div> -->
+      </div>
+    </section>
   </body>
 </html>
